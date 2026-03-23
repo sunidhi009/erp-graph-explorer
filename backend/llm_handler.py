@@ -1,7 +1,7 @@
 import os, sqlite3, json, re, logging, httpx
 logger = logging.getLogger(__name__)
-GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
-# GROQ_API_KEY = "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"
+
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 SYSTEM_PROMPT = """You are an ERP SQL analyst. Answer ONLY questions about this SQLite database:
