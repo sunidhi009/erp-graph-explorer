@@ -1,0 +1,8 @@
+.env
+*.env
+__pycache__/
+*.pyc
+erp.db
+erp.db-shm
+erp.db-wal
+node_modules/
