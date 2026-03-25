@@ -1,6 +1,15 @@
 # ERP Graph Explorer — Order to Cash Intelligence Platform
 
-> AI-powered graph visualization and natural language query interface for SAP Order-to-Cash data.
+> Full-stack AI system for exploring SAP Order-to-Cash data using graph visualization and natural language queries.
+
+## 🚀 Features
+
+- Interactive graph visualization (541 nodes, 755 edges)
+- Natural language → SQL query system (LLM-powered)
+- Guardrails for off-topic query rejection
+- Real-time analytics dashboard
+- End-to-end Order-to-Cash traceability
+- Fast API backend with SQLite
 
 ## 🔗 Live Demo
 **Frontend:** https://erp-graph-explorer.vercel.app  
@@ -21,8 +30,21 @@
 ![Dashboard](sessions/dashboard.png)
 
 ---
+## 🛠️ Tech Stack
 
+- **Frontend:** React, HTML Canvas, Vite  
+- **Backend:** FastAPI (Python)  
+- **Database:** SQLite  
+- **AI/LLM:** Groq (LLaMA 3.1)  
+- **Deployment:** Vercel (frontend), Render (backend)
+  
+---
 ## 🏗️ Architecture
+
+![System Architecture](sessions/architecture.png)
+This system connects a React frontend with a FastAPI backend, SQLite database,
+and Groq LLM to enable graph-based analytics and natural language querying.
+
 ```
 User Browser
 ├── Graph Canvas (541 nodes, 755 edges)
@@ -57,6 +79,16 @@ SQLite DB   Groq LLM API
 | Customers | 8 |
 | Payments | 120 |
 
+### 🔄 Order-to-Cash Flow
+
+![O2C Flow](sessions/o2c-flow.png)
+
+## 💡 Why this project?
+
+ERP systems are complex and hard to explore using traditional dashboards.
+This project simplifies analysis by combining graph visualization with AI-powered querying,
+making business insights accessible in natural language.
+
 ---
 
 ## 🗂️ Project Structure
@@ -86,6 +118,8 @@ erp-graph-explorer/
 │   ├── chat.png
 │   ├── guardrails.png
 │   ├── dashboard.png
+│   ├── o2c-flow.png
+│   ├── architecture.png
 │   └── claude-session.md
 │
 └── README.md                   # Project documentation
