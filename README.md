@@ -42,6 +42,7 @@
 ## 🏗️ Architecture
 
 ![System Architecture](sessions/architecture.png)
+
 This system connects a React frontend with a FastAPI backend, SQLite database,
 and Groq LLM to enable graph-based analytics and natural language querying.
 
